@@ -1,0 +1,898 @@
+<html>
+    <head>
+        <title>OTT Plateform Website</title>
+        <style>
+            .navbar{
+                background-color: rgb(255, 192, 203);
+                border-radius: 10px;
+
+            }
+            .navbar-brand{
+              width: 80px;
+              height: 60px;
+              background-image: url("logo.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+.navbar-nav .nav-item{
+  font-size: 18px;
+
+}
+.navbar-nav .nav-item:hover{
+  background-color: aqua;
+  border-radius: 3px;
+
+}
+
+            .btn1:hover{
+              background-color:green;
+              color:aqua;
+            }
+            .block{
+              height: 300px;
+              background-size: cover;
+              width: 100%;
+            }
+            .para{
+              background-color: red;
+              color: antiquewhite;
+            }
+            .hd{
+              color: aqua;
+            }
+            .mydiv{
+             background-color:rgb(61, 61, 61);
+             color: white;
+             width: 100%;
+             height: 200px;
+         padding-left: 10px;
+         margin-top: 10px;
+            }
+
+
+            .card footer{
+              height: 25px;
+              width: 30px;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              background-color: aqua;
+            }
+            
+            .category-img{
+              height: 150px;
+             padding: 5px 5px;
+            }
+            .btn02{
+              -bs-btn-padding-y: .25rem; 
+              --bs-btn-padding-x: .5rem;
+               --bs-btn-font-size: .75rem;
+               background-color: maroon;
+ border-radius: 10px;
+ text-decoration: none;
+ font-size: 20px;
+ text-align: center;
+            }
+            .btn02:hover{
+              background-color:green;
+              color: aqua;
+            }
+            .btn03{
+              -bs-btn-padding-y: .25rem; 
+              --bs-btn-padding-x: .5rem;
+               --bs-btn-font-size: .75rem;
+               background-color: blue;
+               color: white;
+    border-radius: 10px;
+      font-size: 20px;
+     text-align: center;
+     text-decoration: none;
+            }
+             .btn03:hover{
+              background-color:green;
+              color: maroon;
+            }
+
+       .btn01{
+        -bs-btn-padding-y: .25rem; 
+              --bs-btn-padding-x: .5rem;
+               --bs-btn-font-size: .75rem;
+               background-color: black;color: white;
+    border-radius: 10px;
+      font-size: 20px;
+     text-align: center;
+     text-decoration: none;
+
+       }   
+       .btn01:hover{
+        background-color: rgb(15, 15, 85);
+        color: red;
+       }
+       .card body p{
+        height: 100px;
+        
+       }
+       .footerPart{
+        background-color: rgba(0, 0, 0, 0.79);
+        height: 380;
+        width: 100%;
+        color: white;
+        font-size: 23px;
+        margin-top: 20px;
+        border-radius: 18px;
+       }
+
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+
+}
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100px;
+}
+
+.pages{
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top: 25px;
+
+}
+.copyright{
+     font-size: 0.7rem;
+     text-align: center;
+padding-top: 5px;
+
+}
+
+
+         
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css ">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+<nav class="navbar navbar-expand-lg " >
+  <div class="container-fluid">
+    <a class="navbar-brand padding-20px"  href="#"> <img src="images/logo.jpg" alt="logo" style="height: 60px; width: 180px; border-radius: 10x; margin-left: 20px;"></a>
+      <ul class="navbar-nav m-auto mb-6 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"  href="#"><b>Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><b>Movies</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><b>Shows</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><b>Games</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><b>My Aryaflix</b></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
+            <b>Join Now</b>
+            
+          </a>
+          <ul class="dropdown-menu" >
+            <li><a class="dropdown-item" href="loginott.html">Login Page</a></li>
+            <li><a class="dropdown-item" href="signupott.html">Signup page</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="forgot.html">Forgot page</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn1 " type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</nav>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/hero1.jpeg" class="block" alt="slider1">
+      <div class="carousel-caption d-none d-sm-block">
+        <h4 class="hd">See What's Next </h4>
+        <span class="para">Watch free for 30 days.</span>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/bggame.jpg" class="block" alt="slider2">
+      <div class="carousel-caption d-none d-sm-block">
+        <h4 class="hd">Latest Games</h4>
+        <span class="para"> With AI trends games.</span>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/2259.jpg" class="block" alt="slider3">
+      <div class="carousel-caption d-none d-sm-block">
+        <h4 class="hd">The talent hurt Shows</h4>
+        <span class="para">Only watch Aryaflix on saturday to Sunday.</span>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="mydiv">
+<h1>Movies</h1>
+<p >Movies move us like nothing else can, whether they’re scary, funny,<br> dramatic, romantic or anywhere in-between. So many titles, so much to<br> experience.</p>
+</div>
+<div class="bg-secondary ml-10px">
+<h1 style="color: aqua;">Your next watch!</h1></div>
+<div>
+<p  style="font-size: 50px;  justify-content: center; text-align: center ; align-items: center; background-color: rgb(52, 11, 91); color:white;  border-radius: 30px;"><b>Crowd Pleasers Movies</b></p></div>
+</div>
+<div class=" container category">
+  <div class="row">
+    <div class="col-sm-12">
+    </div>
+  </div>
+
+  <div class="row category-img" style="background-color:palevioletred; height: 480px; width: 100%;">
+
+  <div class="col-sm-3">
+      <div class="card">
+        <img src="images/raid2.jpg" class="card-img-top category-img" alt="img1">
+        <div class="card body">
+          <p>Raid2</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/chhava.jpg" class="card-img-top category-img" alt="img2">
+        <div class="card body">
+          <p>Chhava</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+<div class="col-sm-3">
+      <div class="card">
+        <img src="images/dragon.jpg" class="card-img-top category-img" alt="img3">
+        <div class="card body">
+          <p>Dragon</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/officer on duty.jpg" class="card-img-top category-img" alt="img4">
+        <div class="card body">
+          <p>Officer on duty</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/animal.jpg" class="card-img-top category-img" alt="img5">
+        <div class="card body">
+          <p>Animal</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/jawan.jpg" class="card-img-top category-img" alt="img6">
+        <div class="card body">
+          <p> Jawan</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/fighter.jpg" class="card-img-top category-img" alt="img7">
+        <div class="card body">
+          <p>Fighter</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/raw.jpg" class="card-img-top category-img" alt="img8">
+        <div class="card body">
+          <p>Dragon</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+        </div>
+       </div>
+  </div>
+</div>
+ 
+      <p style="font-size: 50px;  justify-content: center; text-align: center; margin-top: 10px;  border-radius: 30px; width: 100%; background-color: rgb(28, 28, 86); color: red;"><b>Comedy Movies</b></p>
+     
+
+       <div class="container">
+         <div class="row " >
+           <div class="col-sm-12">
+          </div>
+           </div>
+
+  
+  <div class="row  category-img" style="background-color: slateblue; height: 500px; width: 100%;">
+  <div class="col-sm-3">
+      <div class="card">
+        <img src="images/dunki.jpg" class="card-img-top category-img" alt="img9">
+        <div class="card body">
+          <p>Dunki</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/murdermubark.jpg" class="card-img-top category-img" alt="img10">
+        <div class="card body">
+          <p>Murder Mubarak</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+<div class="col-sm-3">
+      <div class="card">
+        <img src="images/thebossbaby.jpg" class="card-img-top category-img" alt="img11">
+        <div class="card body">
+          <p>The boss baby</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/goodbye.jpg" class="card-img-top category-img" alt="img12">
+        <div class="card body">
+          <p>Goodbye</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/red notice.jpg" class="card-img-top category-img" alt="img13">
+        <div class="card body">
+          <p>Red notice</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/shehzada.jpg" class="card-img-top category-img" alt="img14">
+        <div class="card body">
+          <p> shehzada</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/ginny weds sunny.jpg" class="card-img-top category-img" alt="img15">
+        <div class="card body">
+          <p>Ginny weds sunny</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/nadaniya.jpg" class="card-img-top category-img" alt="img16">
+        <div class="card body">
+          <p>Nadaniya</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+     </div>
+    </div>
+
+
+
+
+
+
+    <p style="font-size: 50px;  justify-content: center; text-align: center; margin-top: 10px;  border-radius: 30px; width: 100%; background-color: black; color: rgb(185, 63, 63);"><b>Horror Movies</b></p>
+     
+
+       <div class=" container ">
+         <div class="row " >
+           <div class="col-sm-12">
+          </div>
+           </div>
+
+  
+  <div class="row  category-img" style="background-color:black; height: 500px; width: 100%;">
+  <div class="col-sm-3">
+      <div class="card">
+        <img src="images/until drawn.jpg" class="card-img-top category-img" alt="img17">
+        <div class="card body">
+          <p>Until Dawn</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/the possession of hannah grace.jpg" class="card-img-top category-img" alt="img18">
+        <div class="card body">
+          <p>The possession Of HannahGrace</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+<div class="col-sm-3">
+      <div class="card">
+        <img src="images/final destination 5.jpg" class="card-img-top category-img" alt="img19">
+        <div class="card body">
+          <p>Final Destination 5</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/kumari.jpg" class="card-img-top category-img" alt="img20">
+        <div class="card body">
+          <p>Kumari</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/annabella.jpg" class="card-img-top category-img" alt="img21">
+        <div class="card body">
+          <p>Annabella</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/shaitaan.jpg" class="card-img-top category-img" alt="img22">
+        <div class="card body">
+          <p> Shaitaan</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/ghost stories.jpg" class="card-img-top category-img" alt="img23">
+        <div class="card body">
+          <p>Ghost Stories</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/dont breathe.jpg" class="card-img-top category-img" alt="img24">
+        <div class="card body">
+          <p>Don't breathe</p>
+        </div>
+         <a href="#" class="btn02 btn-primary">Watch now!</a>
+      </div>
+    </div>
+     </div>
+    </div>
+
+
+
+
+
+
+    <div class="mydiv ml-10px" style="margin-top: 10px; background-color: rgb(5, 5, 53); border-radius: 10px;">
+    
+      
+<div class="mydiv">
+<h1 >Shows</h1>
+<p>Shows are a form of entertainment presented on television or digital platforms.<br> They include web series, dramas, reality shows, and more.<br> Each show has unique themes, characters, and stories that engage, inform, or inspire audiences around the world.</p>
+</div>
+
+
+
+
+
+
+<p style="font-size: 50px;  justify-content: center; text-align: center; margin-top: 10px; border-radius: 30px; width: 100%; background-color: aqua; color: red;"><b>Top National & International Shows</b></p>
+     
+
+       <div class="container">
+
+         <div class="row " >
+           <div class="col-sm-12">
+          </div>
+           </div>
+  <div class="row  category-img" style="background-color:rgb(228, 228, 133); height: 500px;">
+  <div class="col-sm-3">
+      <div class="card">
+        <img src="images/shows2.jpg" class="card-img-top category-img" alt="img25">
+        <div class="card body">
+          <p>Squid Gamer2</p>
+        </div>
+         <a href="#" class="btn01 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/shows3.jpg" class="card-img-top category-img" alt="img26">
+        <div class="card body">
+          <p>Zero day</p>
+        </div>
+         <a href="#" class="btn01 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+<div class="col-sm-3">
+      <div class="card">
+        <img src="images/shows4.jpg" class="card-img-top category-img" alt="img27">
+        <div class="card body">
+          <p>Missing You </p>
+        </div>
+         <a href="#" class="btn01 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/adolescence.jpg" class="card-img-top category-img" alt="img28">
+        <div class="card body">
+          <p>Adolescence</p>
+        </div>
+         <a href="#" class="btn01 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/themightybheem.jpeg" class="card-img-top category-img" alt="img29">
+        <div class="card body">
+          <p>TheLittleBheem</p>
+        </div>
+         <a href="#" class="btn01 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/theroyals.jpg" class="card-img-top category-img" alt="img30">
+        <div class="card body">
+          <p> The Royals</p>
+        </div>
+         <a href="#" class="btn01 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+ <div class="col-sm-3">
+      <div class="card">
+        <img src="images/blackwattent.webp" class="card-img-top category-img" alt="img31">
+        <div class="card body">
+          <p>Black Warrant</p>
+        </div>
+         <a href="#" class="btn01 btn-primary">Watch now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="images/dabba cartel.jpg" class="card-img-top category-img" alt="img32">
+        <div class="card body">
+          <p>Dabba cartel</p>
+        </div>
+         <a href="#" class="btn01 btn-primary">Watch now!</a>
+      </div>
+    </div>
+     </div>
+       </div>
+      
+
+
+
+
+
+
+
+    <div class="mydiv ml-10px" style="margin-top: 10px; background-color: black; border-radius: 10px; width: 100%;">
+      
+<h1 class="mt-20px">Games</h1>
+<p>Games are interactive activities that entertain and challenge the mind.<br> They improve focus, creativity, and problem-solving skills. Played on mobile, PC,<br> or console, games come in various genres like action, puzzle, and strategy, offering fun for all ages.</p>
+</div>
+
+
+
+
+
+
+<p style="font-size: 50px;  justify-content: center; text-align: center;margin-top: 10px; border-radius: 30px; width: 100%; background-color: brown; color:rgb(255, 255, 0);"><b>Top Games</b></p>
+     
+
+       <div class="container">
+
+         <div class="row " >
+           <div class="col-sm-12">
+          </div>
+           </div>
+  <div class="row  category-img" style="background-color:rgb(221, 131, 131); height: 500px;">
+  <div class="col-sm-4">
+      <div class="card">
+        <img src="images/ludoking.jpg" class="card-img-top category-img" alt="img25">
+        <div class="card body">
+          <p>Ludo King</p>
+        </div>
+         <a href="#" class="btn03 btn-primary">Play now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="images/raji.jpg" class="card-img-top category-img" alt="img26">
+        <div class="card body">
+          <p>Raji</p>
+        </div>
+         <a href="#" class="btn03 btn-primary">Play now!</a>
+      </div>
+    </div>
+
+<div class="col-sm-4">
+      <div class="card">
+        <img src="images/cats & soup.jpg" class="card-img-top category-img" alt="img27">
+        <div class="card body">
+          <p>Cat & Soup </p>
+        </div>
+         <a href="#" class="btn03 btn-primary">Play  now!</a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="images/GTA.jpg" class="card-img-top category-img" alt="img28">
+        <div class="card body">
+          <p>GTAe</p>
+        </div>
+         <a href="#" class="btn03 btn-primary">Play now!</a>
+      </div>
+    </div>
+
+
+ <div class="col-sm-4">
+      <div class="card">
+        <img src="images/sonic prime.jpg" class="card-img-top category-img" alt="img29">
+        <div class="card body">
+          <p>SonicPrimeDash</p>
+        </div>
+         <a href="#" class="btn03 btn-primary">Play now!</a>
+      </div>
+    </div>
+
+ <div class="col-sm-4">
+      <div class="card">
+        <img src="images/sonic malia+.jpg" class="card-img-top category-img" alt="img30">
+        <div class="card body">
+          <p> Sonic Malia plus</p>
+        </div>
+       <a href="#" class="btn03 btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; width: 100%;">
+  Play Now!
+  </a>
+     </div>
+       </div>
+  </div>
+      
+
+<div class="footerPart container-fluid">
+  <p >Frequently Asked Questions</p>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" style="height: 80px; background-color:green; color: maroon; font-size: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+       What is Aryaflix
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+<div class="accordion-item" style="color: white; background-color: rgb(10, 10, 60);"><p>Aryaflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" style="height: 80px; background-color:burlywood; color: maroon; font-size: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+       How I can watch Aryaflix?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Aryaflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Aryaflix originals, and more. Watch as much as you want, anytime you want</div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" style="height: 80px; background-color:palevioletred; color: rgb(111, 128, 0); font-size: 20px;"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+      Is Aryaflix good for kids?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body" style="color: white; background-color: rgb(10, 10, 60);">The Aryaflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+
+Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</div>
+  </div>
+</div>
+  </div>
+  </div>
+</div>
+
+    <footer>
+        <div class="foot-panel1 fluid-container" style=" margin-top: 100px;">
+           <h3 style="background-color: rgba(3, 3, 100, 0.819); color: aqua;"> Back to Top</h3>
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+              <p> Get to Know us</p>
+              <a>Top Movies</a>
+              <a>Latest shows</a>
+              <a>About Aryaflix</a>
+              <a>Investor Relations</a>
+              <a>Cookies Performance</a>
+            </ul>
+
+<ul>
+              <p> Careers</p>
+              <a>Jobs</a>
+              <a>View in website</a>
+              <a>Become an Affiliate</a>
+              
+             
+              <a>Help</a>
+              
+              
+            </ul>
+
+
+
+            <ul>
+              <p> Ways to watch</p>
+              <a>Speed test</a>
+              <a>Subscriptionwith points</a>
+              <a>Reload your balance</a>
+              <a>Corporate Information</a>
+              <a>Aryaflix Assitance</a>
+            </ul>
+
+
+            <ul>
+              <p> Let Us Help You</p>
+              <a>Legal Notice</a>
+              <a>Your Account</a>
+              <a>Only On Aryaflix</a>
+              <a>Contact Us</a>
+              <a>Media  Center</a>
+            </ul>
+
+        </div>
+<div class="foot-panel3">
+    <div class="logo01"> <img src="images/logo.jpg" style="width: 120px; height: 70px; background-size: cover; background-repeat: no-repeat;" alt="logo"></div>
+</div>
+
+<div class="foot-panel4">
+<div class="pages">
+    <a>Conditions  of use</a>
+    <a>Privacy Notice</a>
+    <a>Your Ads Privacy Choices</a>
+</div>
+<div class="copyright">
+    1996-2025,Aryaflix.netlyfy, Inc, or its affiliates
+</div>
+    </footer>
+    </body>
+
+    </html>
+
+
+    <!-- <button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Custom button
+</button> -->
